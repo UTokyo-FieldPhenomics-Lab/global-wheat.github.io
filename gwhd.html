@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Global WHEAT Dataset</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <small class="fa fa-map-marker-alt text-primary me-2"></small>
+            <small>123 Street, New York, USA</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center py-3">
+            <small class="far fa-clock text-primary me-2"></small>
+            <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+            <small class="fa fa-phone-alt text-primary me-2"></small>
+            <small>+012 345 6789</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center">
+            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="btn btn-sm-square bg-white text-primary me-0" href=""
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav
+    class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+    data-wow-delay="0.1s"
+    >
+    <a href="index.html" class="navbar-brand p-0">
+        <img class="img-fluid me-3" src="img/logo.png" alt="Icon" />
+        <!-- <h1 class="m-0 text-primary">Zoofari</h1> -->
+    </a>
+    <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+        <div class="navbar-nav ms-auto">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="#about" class="nav-item nav-link">About</a>
+        <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                <a href="./gwhd.html" class="dropdown-item">GWHD (detection)</a>
+                <a href="./gwfss.html" class="dropdown-item">GWFSS (segmentation)</a>
+            </div>
+        </div>
+        <a href="#sponsors" class="nav-item nav-link">Sponsors</a>
+        <!-- <a href="#sites" class="nav-item nav-link">Sites</a> -->
+        <a href="#contributors" class="nav-item nav-link">Contributors</a>
+        <a href="#events" class="nav-item nav-link">Events</a>
+        </div>
+        <!-- <a href="https://zenodo.org/record/5092309" target="_blank" class="btn btn-primary"
+        >Download<i class="fa fa-arrow-right ms-3"></i
+        ></a> -->
+    </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div
+    class="container-fluid header-bg py-5 mb-5 wow fadeIn"
+    data-wow-delay="0.1s"
+    >
+    <div class="container py-5">
+        <h1 class="display-4 text-white mb-3 animated slideInDown">
+        Our Animals
+        </h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+            <a class="text-white" href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+            <a class="text-white" href="#">Projects</a>
+            </li>
+            <li class="breadcrumb-item text-primary active" aria-current="page">
+            GWDH (detection)
+            </li>
+        </ol>
+        </nav>
+    </div>
+    </div>
+    <!-- Page Header End -->
+  
+
+
+    <div class="container-xxl">
+        <div class="container" id="gwhd">
+            <div class="row g-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p><span class="text-primary me-2">#</span>Past projects (<span class="text-primary">GWHD</span>)</p>
+                    <h1 class="display-5">  
+                        Global Wheat Head Detection Dataset
+                    </h1>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-4">
+                        Global wheat head detection Dataset is the first large-scale dataset for wheat head detection from field optical images. It included a very large range of cultivars from differents continents. Wheat is a staple crop grown all over the world and consequently interest in wheat phenotyping spans the globe. Therefore, it is important that models developed for wheat phenotyping, such as wheat head detection networks, generalize between different growing environments around the world.
+                    </p>
+                    <h5 class="mb-3 text-capitalize">
+                    <i class="far fa-check-circle text-primary me-3"></i>Free to use for any purpose
+                    </h5>
+                    <h5 class="mb-3 text-capitalize">
+                    <i class="far fa-check-circle text-primary me-3"></i>Large range of cultivars and environmental condition
+                    </h5>
+                    <h5 class="mb-3 text-capitalize">
+                    <i class="far fa-check-circle text-primary me-3"></i>Images taken by different platforms
+                    </h5>
+                    <!-- <a class="btn btn-primary py-3 px-5 " href="https://zenodo.org/record/4298502" target="_blank">Download</a> -->
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="img-border">
+                    <img class="img-fluid" src="img/descriptionimage.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mt-5">
+                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-5">GWHD <span class="text-primary">2020</span></h1>
+                <p class="mb-4">
+                    Through a joint international collaborative effort, we have built a large, diverse, and well-labelled dataset of wheat images, called the Global Wheat Head Detection (GWHD) dataset. It contains 4700 high-resolution RGB images and 190000 labelled wheat heads collected from several countries around the world at different growth stages with a wide range of genotypes. Guidelines for image acquisition, associating minimum metadata to respect FAIR principles, and consistent head labelling methods are proposed when developing new head detection datasets.This is the official version of the Global Wheat Head Dataset presented in David et al. (2020) . It's a corrected version of the dataset published on Kaggle, and the one used for the Codalab challenge.
+                </p>
+                <p>
+                    <span class="badge bg-info rounded-pill">version 4</span> 
+                    <span class="badge bg-primary rounded-pill" type=button onClick="javascript:window.open('https://doi.org/10.34133/2020/3521852', '_black');"><a>DOI</a></span> 
+                    <span class="badge bg-primary rounded-pill" type=button onclick="javascript:window.open('https://zenodo.org/record/4298502', '_black');">Download</span>
+                </p>
+                </div>
+    
+                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-5">GWHD <span class="text-primary">2021</span></h1>
+                <p class="mb-4">From this first experience, a few avenues for improvements have been identified regarding data size, head diversity, and label reliability. To address these issues, the 2020 dataset has been reexamined, relabeled, and complemented by adding 1722 images from 5 additional countries, allowing for 81,553 additional wheat heads. This is the official version of the Global Wheat Head Dataset presented in David et al. (2021).Labels are included in csv. The dataset is composed of more than 6000 images of 1024x1024 pixels containing 300k+ unique wheat heads, with the corresponding bounding boxes.</p>
+                <p>
+                    <span class="badge bg-info rounded-pill">version 1.0</span> 
+                    <span class="badge bg-primary rounded-pill" type=button onClick="javascript:window.open('https://doi.org/10.34133/2021/9846158', '_black');"><a>DOI</a></span> 
+                    <span class="badge bg-primary rounded-pill" type=button onclick="javascript:window.open('https://zenodo.org/record/5092309', '_black');">Download</span>
+                </p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!-- About End -->
+
+    
+    <!-- Footer Start -->
+    <div
+      class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Address</h5>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Institute of Agricultural Sciences, FMG C 25,Eschikon 33,8315 Lindau,Switzerland
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+41  52 354 91 23
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>andreas.hund<@>usys.ethz.ch
+            </p>
+            <!-- <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div> -->
+          </div>
+<!--           <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Quick Links</h5>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Our Services</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+            <a class="btn btn-link" href="">Support</a>
+          </div> -->
+<!--           <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Popular Links</h5>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Our Services</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+            <a class="btn btn-link" href="">Support</a>
+          </div> -->
+          <!-- <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Newsletter</h5>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                class="form-control border-0 w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">www.global-wheat.com</a>, All
+              Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              Template Designed By
+              <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+              <br />Website Maintained By:
+              <a class="border-bottom" href="https://www.haozhou.wang" target="_blank">Haozhou Wang</a>
+              and
+              <a class="border-bottom" href="https://www.u-tokyo.ac.jp/focus/en/people/k0001_01967.html" target="_blank">Wei Guo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

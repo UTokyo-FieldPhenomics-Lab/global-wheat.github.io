@@ -117,8 +117,8 @@
           <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
             <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-              <a href="#gwhd" class="dropdown-item">GWHD (detection)</a>
-              <a href="#gwfss" class="dropdown-item">GWFSS (segmentation)</a>
+              <a href="./gwhd.html" class="dropdown-item">GWHD (detection)</a>
+              <a href="./gwfss.html" class="dropdown-item">GWFSS (segmentation)</a>
             </div>
           </div>
           <a href="#sponsors" class="nav-item nav-link">Sponsors</a>
@@ -135,14 +135,14 @@
 
     <!-- Header Start -->
     <div class="container-fluid bg-dark p-0 mb-5">
-      <div class="row g-0 flex-column-reverse flex-lg-row">
+      <div class="row g-0 flex-column-reverse flex-md-row">
         <div class="col-md-6 p-0 wow fadeIn" data-wow-delay="0.1s">
           <div class="header-bg h-100 d-flex flex-column justify-content-center p-5">
             <h1 class="display-4 text-light mb-5">
               To improve precision phenotyping under field conditions by assembling large, diverse and well annotated image data.
             </h1>
             <div class="d-flex align-items-center pt-4 animated slideInDown">
-              <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5"
+              <a href="#about" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5"
                 >Read More</a
               >
               <button
@@ -229,16 +229,17 @@
             <p class="mb-4">
                 Global wheat Dataset consortium aims to improve precision phenotyping under field conditions by assembling large, diverse and well annotated image data.
             </p>
-                    <h5 class="mb-3 text-capitalize">
-                    <i class="far fa-check-circle text-primary me-3"></i>Different organ class labels
-                    </h5>
-                    <h5 class="mb-3 text-capitalize">
-                    <i class="far fa-check-circle text-primary me-3"></i>Large range of cultivars and environmental condition
-                    </h5>
-                    <h5 class="mb-3 text-capitalize">
-                    <i class="far fa-check-circle text-primary me-3"></i>Different developmental stages
-                    </h5>
-            <h1 class="display-5 mb-4">
+            <h5 class="mb-3 text-capitalize">
+            <i class="far fa-check-circle text-primary me-3"></i>Different organ class labels
+            </h5>
+            <h5 class="mb-3 text-capitalize">
+            <i class="far fa-check-circle text-primary me-3"></i>Large range of cultivars and environmental condition
+            </h5>
+            <h5 class="mb-3 text-capitalize">
+            <i class="far fa-check-circle text-primary me-3"></i>Different developmental stages
+            </h5>
+
+            <!-- <h1 class="display-5 mb-4 mt-5">
               Projects:
             </h1>
             <h5 class="mb-3 text-capitalize">
@@ -246,112 +247,68 @@
             </h5>
             <h5 class="mb-3 text-capitalize">
               <i class="far fa-check-circle text-primary me-3"></i> Global wheat full semantic segmentation (<span class="text-primary">GWFSS</span>)
-            </h5>
+            </h5> -->
+
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container-xxl">
-        <div class="container" id="gwhd">
-            <div class="row g-5">
-                <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <p><span class="text-primary me-2">#</span>Past projects (<span class="text-primary">GWHD</span>)</p>
-                    <h1 class="display-5">  
-                        Global Wheat Head Detection Dataset
-                    </h1>
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-4">
-                        Global wheat head detection Dataset is the first large-scale dataset for wheat head detection from field optical images. It included a very large range of cultivars from differents continents. Wheat is a staple crop grown all over the world and consequently interest in wheat phenotyping spans the globe. Therefore, it is important that models developed for wheat phenotyping, such as wheat head detection networks, generalize between different growing environments around the world.
-                    </p>
-                    <h5 class="mb-3 text-capitalize">
-                    <i class="far fa-check-circle text-primary me-3"></i>Free to use for any purpose
-                    </h5>
-                    <h5 class="mb-3 text-capitalize">
-                    <i class="far fa-check-circle text-primary me-3"></i>Large range of cultivars and environmental condition
-                    </h5>
-                    <h5 class="mb-3 text-capitalize">
-                    <i class="far fa-check-circle text-primary me-3"></i>Images taken by different platforms
-                    </h5>
-                    <!-- <a class="btn btn-primary py-3 px-5 " href="https://zenodo.org/record/4298502" target="_blank">Download</a> -->
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="img-border">
-                    <img class="img-fluid" src="img/descriptionimage.png" alt="" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-5 mt-5">
-                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="display-5">GWHD <span class="text-primary">2020</span></h1>
-                <p class="mb-4">
-                    Through a joint international collaborative effort, we have built a large, diverse, and well-labelled dataset of wheat images, called the Global Wheat Head Detection (GWHD) dataset. It contains 4700 high-resolution RGB images and 190000 labelled wheat heads collected from several countries around the world at different growth stages with a wide range of genotypes. Guidelines for image acquisition, associating minimum metadata to respect FAIR principles, and consistent head labelling methods are proposed when developing new head detection datasets.This is the official version of the Global Wheat Head Dataset presented in David et al. (2020) . It's a corrected version of the dataset published on Kaggle, and the one used for the Codalab challenge.
-                </p>
-                <p>
-                    <span class="badge bg-info rounded-pill">version 4</span> 
-                    <span class="badge bg-primary rounded-pill" type=button onClick="javascript:window.open('https://doi.org/10.34133/2020/3521852', '_black');"><a>DOI</a></span> 
-                    <span class="badge bg-primary rounded-pill" type=button onclick="javascript:window.open('https://zenodo.org/record/4298502', '_black');">Download</span>
-                </p>
-                </div>
-    
-                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="display-5">GWHD <span class="text-primary">2021</span></h1>
-                <p class="mb-4">From this first experience, a few avenues for improvements have been identified regarding data size, head diversity, and label reliability. To address these issues, the 2020 dataset has been reexamined, relabeled, and complemented by adding 1722 images from 5 additional countries, allowing for 81,553 additional wheat heads. This is the official version of the Global Wheat Head Dataset presented in David et al. (2021).Labels are included in csv. The dataset is composed of more than 6000 images of 1024x1024 pixels containing 300k+ unique wheat heads, with the corresponding bounding boxes.</p>
-                <p>
-                    <span class="badge bg-info rounded-pill">version 1.0</span> 
-                    <span class="badge bg-primary rounded-pill" type=button onClick="javascript:window.open('https://doi.org/10.34133/2021/9846158', '_black');"><a>DOI</a></span> 
-                    <span class="badge bg-primary rounded-pill" type=button onclick="javascript:window.open('https://zenodo.org/record/5092309', '_black');">Download</span>
-                </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" id="gwfss">
-            <div class="row g-5 mt-3">
-                <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <p><span class="text-primary me-2">#</span>Current projects (<span class="text-primary">GWFSS</span>)</p>
-                    <h1 class="display-5 mb-4">Global wheat full semantic segmentation</h1>
-                </div>
-                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
-                    <p>Aim to train a semantic segmentation of wheat organs (stems, leaves, flowers) … under field conditions to enable precision breeding…</p>
-                    <p>Deep learning methods for image processing are rapidly advancing and imaging techniques have become a standard for classification and quantification in agriculture. However, agricultural datasets assembled by domain experts are still comparably small. The global wheat consortium brings together this domain knowledge to assemble a large training set. We aim is to define a balanced dataset for training and validation containing the most relevant features observable for field-grown wheat. Image information will be enhanced by metadata, such as the developmental stage, genotype or agricultural treatment.</p>
-                    <p class="text-primary">Contributed images fulfil the following conditions:</p>
-                    <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>Red-green-blue (RGB) images
-                    </h5>
-                    <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>0° and 45°, viewing angles
-                    </h5>
-                    <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>Spatial resolution <= 0.5 mm / pixel
-                    </h5>
-                    <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>Patches of [512 x 512] pixels, up to [1024 x 1024].
-                    </h5>
-                    <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>At least 7 Classes: wheat spikes, stems, awns, leaves, soil ...
-                    </h5>
-                    <p class="text-primary">Powered by:</p>
-                    <p>CVAT Annotation Platform
-                    <span class="badge bg-primary rounded-pill" type=button onClick="javascript:window.open('https://annotation.kp.ethz.ch', '_black');"><a>Website</a></span> 
-                    <span class="badge bg-primary rounded-pill" type=button onclick="javascript:window.open('assets/CVAT_Guide.pdf', '_black');">User Manual</span>
-                    </p>
-                    <p>Dataset download link comming soon</p>
-                </div>
-                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="img-border">
-                    <img class="img-fluid" src="img/gwfss_header.png" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </div>
     <!-- About End -->
+
+    <!-- Animal Start -->
+    <div class="container-xxl py-5" id="sites">
+        <div class="container">
+            <div
+            class="row g-5 mb-5 align-items-end wow fadeInUp"
+            data-wow-delay="0.1s"
+            >
+            <div class="col-lg-6">
+                <p><span class="text-primary me-2">#</span>Projects</p>
+                <h1 class="display-5 mb-0">
+                Available <span class="text-primary">Datasets</span> 
+                </h1>
+            </div>
+            <!-- <div class="col-lg-6 text-lg-end">
+                <a class="btn btn-primary py-3 px-5" href=""
+                >Explore More Animals</a
+                >
+            </div> -->
+            </div>
+            <div class="row g-4" data-masonry='{"percentPosition": true }'>
+                <div class="col-lg-6 col-md-6" data-wow-delay="0.1s">
+                    <a
+                    class="animal-item"
+                    href="./gwhd.html"
+                    >
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="img/descriptionimage.png" alt="" />
+                        <div class="animal-text p-4">
+                        <p class="text-white small text-uppercase mb-0">Dataset</p>
+                        <h3 class="text-white mb-0">Global Wheat Head Detection</h3>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+    
+                <div class="col-lg-6 col-md-6" data-wow-delay="0.1s">
+                    <a
+                    class="animal-item"
+                    href="./gwfss.html"
+                    >
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="img/gwfss_header.png" alt="" />
+                        <div class="animal-text p-4">
+                        <p class="text-white small text-uppercase mb-0">Dataset</p>
+                        <h3 class="text-white mb-0">Global wheat full semantic segmentation</h3>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- Animal End -->
 
     <!-- Facts Start -->
     <!-- <div
@@ -400,7 +357,7 @@
     <!-- Service Start -->
     <div class="container-xxl py-5" id="sponsors">
       <div class="container">
-        <div class="row g-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
           <div class="col-lg-6">
             <p><span class="text-primary me-2">#</span>Our Sponsors</p>
             <h1 class="display-5 mb-0">
@@ -423,37 +380,37 @@
 
           <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
             <!-- <div class="h-25 p-2 mh-100" style="background: url('img/icon/gifs.jpg') center center no-repeat; background-size: cover;"></div> -->
-            <img class="mb-3 mw-100" src="img/icon/gifs.jpg" height="65px;" alt="Icon" />
+            <img class="mb-3 mw-100" src="img/icon/gifs.jpg" height="65px;" alt="Icon" onclick="javascript:window.open('https://gifs.ca/', '_black');" onmouseover="" style="cursor: pointer;"/>
             <h5 class="mb-3 text-danger">Platinum sponsor</h5>
             <span>Global Institude For Food Security</span>
           </div>
 
           <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <img class="mb-3 mw-100" src="img/icon/Kubota.png" height="65px;" alt="Icon" />
+            <img class="mb-3 mw-100" src="img/icon/Kubota.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.kubota.co.jp/', '_black');" onmouseover="" style="cursor: pointer;"/>
             <h5 class="mb-3 text-warning">Gold sponsor</h5>
             <span>Kubota</span>
           </div>
 
           <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <img class="mb-3 mw-100" src="img/icon/DigitAg.png" height="65px;" alt="Icon" />
+            <img class="mb-3 mw-100" src="img/icon/DigitAg.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.hdigitag.fr/fr/', '_black');" onmouseover="" style="cursor: pointer;"/>
             <h5 class="mb-3 text-warning">Gold sponsor</h5>
             <span>Digit Agriculture</span>
           </div>
 
           <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <img class="mb-3 mw-100" src="img/icon/Hiphen.png" height="65px;" alt="Icon" />
+            <img class="mb-3 mw-100" src="img/icon/Hiphen.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.hiphen-plant.com/', '_black');" onmouseover="" style="cursor: pointer;"/>
             <h5 class="mb-3 text-warning">Gold sponsor</h5>
             <span>Hiphen</span>
           </div>
 
           <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <img class="mb-3 mw-100" src="img/icon/plantphenomics.svg" height="65px;" alt="Icon" />
+            <img class="mb-3 mw-100" src="img/icon/plantphenomics.svg" height="65px;" alt="Icon" onclick="javascript:window.open('https://spj.science.org/journal/plantphenomics', '_black');" onmouseover="" style="cursor: pointer;"/>
             <h5 class="mb-3 text-secondary">Silver sponsor</h5>
             <span>Plant Phenomics</span>
           </div>
 
           <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-            <img class="mb-3 mw-100" src="img/icon/quantomics.png" height="65px;" alt="Icon" />
+            <img class="mb-3 mw-100" src="img/icon/quantomics.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://quantomics.co.jp/', '_black');" onmouseover="" style="cursor: pointer;"/>
             <h5 class="mb-3 text-secondary">Silver sponsor</h5>
             <span>Quantomics</span>
           </div>
@@ -482,128 +439,6 @@
       </div>
     </div>
     <!-- Service End -->
-
-    <!-- Animal Start -->
-    <!-- <div class="container-xxl py-5" id="sites">
-      <div class="container">
-        <div
-          class="row g-5 mb-5 align-items-end wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Data collection sites</p>
-            <h1 class="display-5 mb-0">
-              Let`s See Our <span class="text-primary">Zoofari</span> Awsome
-              Animals
-            </h1>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <a class="btn btn-primary py-3 px-5" href=""
-              >Explore More Animals</a
-            >
-          </div>
-        </div>
-        <div class="row g-4" data-masonry='{"percentPosition": true }'>
-              <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
-                <a
-                  class="animal-item"
-                  href="img/plot-1.png"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid w-100" src="img/plot-1.png" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
-                <a
-                  class="animal-item"
-                  href="img/plot-2.png"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid w-100" src="img/plot-2.png" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-
-              <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
-                <a
-                  class="animal-item"
-                  href="img/plot-3.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid w-100" src="img/plot-3.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
-                <a
-                  class="animal-item"
-                  href="img/plot-4.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid w-100" src="img/plot-4.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
-                <a
-                  class="animal-item"
-                  href="img/plot-5.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid w-100" src="img/plot-5.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
-                <a
-                  class="animal-item"
-                  href="img/plot-6.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid w-100" src="img/plot-6.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Animal End -->
 
     <!-- Visiting Hours Start -->
     <div
