@@ -8,7 +8,7 @@
     <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <link href="./img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -152,11 +152,21 @@
             </li>
         </ol>
         </nav>
+        <div class="d-flex align-items-center pt-4 animated slideInDown">
+          <button
+            type="button"
+            class="btn-play"
+            data-bs-toggle="modal"
+            data-src="https://video.ethz.ch/etc/designs/mmp/video/player.html?id=14295540-1f87-4cde-acd9-0e417edbcf6f"
+            data-bs-target="#videoModal"
+          >
+            <span></span>
+          </button>
+          <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
+        </div>
     </div>
     </div>
     <!-- Page Header End -->
-  
-
 
     <div class="container-xxl">
 
@@ -532,9 +542,46 @@
         </div>
     </div>
     <!-- Visiting Hours End -->
-    
 
-    
+    <!-- Video Modal Start--> 
+    <div
+      class="modal modal-video fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">Hit <kbd>Space</kbd> to play video</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- 16:9 aspect ratio -->
+            <div class="ratio ratio-16x9">
+              <!-- <iframe
+                class="embed-responsive-item"
+                src=""
+                id="video"
+                allowfullscreen
+                allowscriptaccess="always"
+                allow="autoplay"
+              ></iframe> -->
+              <iframe src="https://video.ethz.ch/etc/designs/mmp/video/player.html?id=14295540-1f87-4cde-acd9-0e417edbcf6f" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Video Modal End -->
+        
+
     <!-- Footer Start -->
     <div
       class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn"
@@ -603,7 +650,7 @@
           </div> -->
         </div>
       </div>
-      
+
       <div class="container">
         <div class="copyright">
           <div class="row">
