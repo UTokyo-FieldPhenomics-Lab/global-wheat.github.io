@@ -59,24 +59,24 @@
                 content: "";
                 display: block;
                 border-top: .25rem dotted #2EB872;
-                width: 8.46rem;
+                width: min(8.46rem, 8.46vw);
                 position: absolute;
-                left: 7.5rem;
+                left: min(7.5rem,7.5vw);
                 top: .3125rem
             }
             .timeline-steps .timeline-step:not(:first-child):before {
                 content: "";
                 display: block;
                 border-top: .25rem dotted #2EB872;
-                width: 8.8125rem;
+                width: min(8.8125rem, 8.8125vw);
                 position: absolute;
-                right: 7.5rem;
+                right: min(7.5rem,7.5vw);
                 top: .3125rem
             }
         }
 
         .timeline-steps .timeline-content {
-            width: 15rem;
+            width: min(15rem,15vw);
             text-align: center
         }
 
@@ -240,13 +240,14 @@
                 </div>
                 <div class="wow fadeInUp text-center" data-wow-delay="0.1s">
                     <h1 class="display-5 mb-4">Global wheat full semantic segmentation</h1>
+                    <img class="img-fluid w-75" src="img/GWProjects.jpg" alt="" />
                 </div>
             </div>
         </div>
 
         <!-- time line start -->
         <div class="container">                      
-            <div class="row text-center justify-content-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row text-center justify-content-center my-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-xl-6 col-lg-8">
                     <h2 class="font-weight-bold">Time Line</h2>
                     <p class="text-muted">Aim to train a semantic segmentation of wheat organs (stems, leaves, flowers) … under field conditions to enable precision breeding…</p>
@@ -313,17 +314,14 @@
                     <h5 class="mb-3">
                     <i class="far fa-check-circle text-primary me-3"></i>At least 7 Classes: wheat spikes, stems, awns, leaves, soil ...
                     </h5>
+                </div>
+                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.5s">
                     <p class="text-primary">Powered by:</p>
                     <p>CVAT Annotation Platform
                     <span class="badge bg-primary rounded-pill" type=button onClick="javascript:window.open('https://annotation.kp.ethz.ch', '_black');"><a>Website</a></span> 
                     <span class="badge bg-primary rounded-pill" type=button onclick="javascript:window.open('assets/CVAT_Guide.pdf', '_black');">User Manual</span>
                     </p>
                     <p>Dataset download link comming soon</p>
-                </div>
-                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="position-relative">
-                        <img class="img-fluid w-200" src="img/GWProjects.jpg" alt="" />
-                    </div>
                 </div>
             </div>
         </div>
