@@ -1,126 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Global WHEAT Dataset</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <!-- <link href="./img/favicon.ico" rel="icon" /> -->
+<head>
+  <meta charset="utf-8" />
+  <title>Global WHEAT Dataset</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <!-- <link href="./img/favicon.ico" rel="icon" /> -->
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <style> /*timeline*/
-        .timeline-steps {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap
-        }
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
 
-        .timeline-steps .timeline-step {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            margin: 1rem
-        }
+  <style>
+    /*timeline*/
+    .timeline-steps {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap
+    }
 
-        @media (min-width:768px) {
-            .timeline-steps .timeline-step:not(:last-child):after {
-                content: "";
-                display: block;
-                border-top: .25rem dotted #2EB872;
-                width: min(8.46rem, 8.46vw);
-                position: absolute;
-                left: min(7.5rem,7.5vw);
-                top: .3125rem
-            }
-            .timeline-steps .timeline-step:not(:first-child):before {
-                content: "";
-                display: block;
-                border-top: .25rem dotted #2EB872;
-                width: min(8.8125rem, 8.8125vw);
-                position: absolute;
-                right: min(7.5rem,7.5vw);
-                top: .3125rem
-            }
-        }
+    .timeline-steps .timeline-step {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin: 1rem
+    }
 
-        .timeline-steps .timeline-content {
-            width: min(15rem,15vw);
-            text-align: center
-        }
+    @media (min-width:768px) {
+      .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #2EB872;
+        width: min(8.46rem, 8.46vw);
+        position: absolute;
+        left: min(7.5rem, 7.5vw);
+        top: .3125rem
+      }
 
-        .timeline-steps .timeline-content .inner-circle {
-            border-radius: 1.5rem;
-            height: 1rem;
-            width: 1rem;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #2EB872;
-        }
+      .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #2EB872;
+        width: min(8.8125rem, 8.8125vw);
+        position: absolute;
+        right: min(7.5rem, 7.5vw);
+        top: .3125rem
+      }
+    }
 
-        .timeline-steps .timeline-content .inner-circle:before {
-            content: "";
-            background-color: #2EB872;
-            display: inline-block;
-            height: 3rem;
-            width: 3rem;
-            min-width: 3rem;
-            border-radius: 6.25rem;
-            opacity: .5
-        }
-    </style>
-  </head>
+    .timeline-steps .timeline-content {
+      width: min(15rem, 15vw);
+      text-align: center
+    }
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
+    .timeline-steps .timeline-content .inner-circle {
+      border-radius: 1.5rem;
+      height: 1rem;
+      width: 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2EB872;
+    }
+
+    .timeline-steps .timeline-content .inner-circle:before {
+      content: "";
+      background-color: #2EB872;
+      display: inline-block;
+      height: 3rem;
+      width: 3rem;
+      min-width: 3rem;
+      border-radius: 6.25rem;
+      opacity: .5
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+  <!-- Topbar Start -->
+  <!-- <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
       <div class="row gx-0 d-none d-lg-flex">
         <div class="col-lg-7 px-5 text-start">
           <div class="h-100 d-inline-flex align-items-center py-3 me-4">
@@ -154,105 +144,90 @@
         </div>
       </div>
     </div> -->
-    <!-- Topbar End -->
+  <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <nav
-    class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
-    data-wow-delay="0.1s"
-    >
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+    data-wow-delay="0.1s">
     <a href="index.html" class="navbar-brand p-0">
-        <img class="img-fluid me-3" src="img/logo.png" alt="Icon" />
-        <!-- <h1 class="m-0 text-primary">Zoofari</h1> -->
+      <img class="img-fluid me-3" src="img/logo.png" alt="Icon" />
+      <!-- <h1 class="m-0 text-primary">Zoofari</h1> -->
     </a>
-    <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-    >
-        <span class="navbar-toggler-icon"></span>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
-        <div class="navbar-nav ms-auto">
+      <div class="navbar-nav ms-auto">
         <a href="index.html" class="nav-item nav-link active">Home</a>
         <a href="#about" class="nav-item nav-link">About</a>
         <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
-            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                <a href="./gwhd.html" class="dropdown-item">GWHD (detection)</a>
-                <a href="./gwfss.html" class="dropdown-item">GWFSS (segmentation)</a>
-            </div>
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+          <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+            <a href="./gwhd.html" class="dropdown-item">GWHD (detection)</a>
+            <a href="./gwfss.html" class="dropdown-item">GWFSS (segmentation)</a>
+          </div>
         </div>
         <a href="./index.html#events" class="nav-item nav-link">Events</a>
-        </div>
-        <!-- <a href="https://zenodo.org/record/5092309" target="_blank" class="btn btn-primary"
+      </div>
+      <!-- <a href="https://zenodo.org/record/5092309" target="_blank" class="btn btn-primary"
         >Download<i class="fa fa-arrow-right ms-3"></i
         ></a> -->
     </div>
-    </nav>
-    <!-- Navbar End -->
+  </nav>
+  <!-- Navbar End -->
 
-    <!-- Page Header Start -->
-    <div
-    class="container-fluid header-bg py-5 mb-5 wow fadeIn"
-    data-wow-delay="0.1s"
-    >
+  <!-- Page Header Start -->
+  <div class="container-fluid header-bg py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
-        <h1 class="display-4 text-white mb-3 animated slideInDown">
+      <h1 class="display-4 text-white mb-3 animated slideInDown">
         Available Dataset
-        </h1>
-        <nav aria-label="breadcrumb animated slideInDown">
+      </h1>
+      <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item">
+          <li class="breadcrumb-item">
             <a class="text-white" href="./index.html">Home</a>
-            </li>
-            <li class="breadcrumb-item">
+          </li>
+          <li class="breadcrumb-item">
             <a class="text-white" href="#">Projects</a>
-            </li>
-            <li class="breadcrumb-item text-primary active" aria-current="page">
+          </li>
+          <li class="breadcrumb-item text-primary active" aria-current="page">
             GWDH (detection)
-            </li>
+          </li>
         </ol>
-        </nav>
-        <div class="d-flex align-items-center pt-4 animated slideInDown">
-          <button
-            type="button"
-            class="btn-play"
-            data-bs-toggle="modal"
-            data-src="https://www.youtube.com/embed/Bz_zHAjH6hM"
-            data-bs-target="#videoModal"
-          >
-            <span></span>
-          </button>
-          <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
+      </nav>
+      <div class="d-flex align-items-center pt-4 animated slideInDown">
+        <button type="button" class="btn-play" data-bs-toggle="modal"
+          data-src="https://www.youtube.com/embed/Bz_zHAjH6hM" data-bs-target="#videoModal">
+          <span></span>
+        </button>
+        <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
+      </div>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+  <div class="container-xxl">
+
+    <div class="container" id="gwfss">
+      <div class="row g-5 mt-3">
+        <div class="wow fadeInUp" data-wow-delay="0.1s">
+          <p><span class="text-primary me-2">#</span>Current projects (<span class="text-primary">GWFSS</span>)</p>
         </div>
-    </div>
-    </div>
-    <!-- Page Header End -->
-
-    <div class="container-xxl">
-
-        <div class="container" id="gwfss">
-            <div class="row g-5 mt-3">
-                <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <p><span class="text-primary me-2">#</span>Current projects (<span class="text-primary">GWFSS</span>)</p>
-                </div>
-                <div class="wow fadeInUp text-center" data-wow-delay="0.2s">
-                    <h1 class="display-5 mb-4">Global wheat full semantic segmentation</h1>
-                    <div class="d-flex justify-content-center align-items-stretch" style="gap: 10px;">
-                      <div class="flex-grow-1" style="height: 300px; overflow: hidden;">
-                          <img class="img-fluid h-100" style="object-fit: cover;" src="img/gwfss_sample.png" alt="" />
-                      </div>
-                      <div class="flex-grow-1" style="height: 300px; overflow: hidden;">
-                          <img class="img-fluid h-100" style="object-fit: cover;" src="img/organ_animate.gif" alt="" />
-                      </div>
-                  </div>
-                </div>
+        <div class="wow fadeInUp text-center" data-wow-delay="0.2s">
+          <h1 class="display-5 mb-4">Global wheat full semantic segmentation</h1>
+          <div class="d-flex justify-content-center align-items-stretch" style="gap: 10px;">
+            <div class="flex-grow-1" style="height: 300px; overflow: hidden;">
+              <img class="img-fluid h-100" style="object-fit: cover;" src="img/gwfss_sample.png" alt="" />
             </div>
+            <div class="flex-grow-1" style="height: 300px; overflow: hidden;">
+              <img class="img-fluid h-100" style="object-fit: cover;" src="img/organ_animate.gif" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!--
+    <!--
         time line start
         <div class="container">                      
             <div class="row text-center justify-content-center my-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -300,118 +275,139 @@
         time line end
         -->
 
-        <div class="container">
-            <div class="row g-5 mt-3">
-                <div class="col-12 my-3 wow fadeInUp" data-wow-delay="0.1s">
-                    <p>Deep learning methods for image processing are rapidly advancing and imaging techniques have become a standard for classification and quantification in agriculture. However, agricultural datasets assembled by domain experts are still comparably small. The global wheat consortium brings together this domain knowledge to assemble a large training set. We aim is to define a balanced dataset for training and validation containing the most relevant features observable for field-grown wheat. Image information will be enhanced by metadata, such as the developmental stage, genotype or agricultural treatment.</p>
-                </div>
-
-                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="text-primary">Contributed images fulfil the following conditions:</p>
-                    <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>Red-green-blue (RGB) images
-                    </h5>
-                    <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>0° and 45°, viewing angles
-                    </h5>
-                    <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>Spatial resolution <= 0.5 mm / pixel
-                    </h5>
-                    <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>Patches of [512 x 512] pixels, up to [1024 x 1024].
-                    </h5>
-                    <h5 class="mb-3">
-                    <i class="far fa-check-circle text-primary me-3"></i>At least 7 Classes: wheat spikes, stems, awns, leaves, soil ...
-                    </h5>
-                </div>
-                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="text-primary">Powered by:</p>
-                    <p>CVAT Annotation Platform
-                    <span class="badge bg-primary rounded-pill" type=button onClick="javascript:window.open('https://annotation.kp.ethz.ch', '_black');"><a>Website</a></span> 
-                    <span class="badge bg-primary rounded-pill" type=button onclick="javascript:window.open('assets/CVAT_Guide.pdf', '_black');">User Manual</span>
-                    </p>
-                    <p>Dataset download link comming soon</p>
-                </div>
-            </div>
+    <div class="container">
+      <div class="row g-5 mt-3">
+        <div class="col-12 my-3 wow fadeInUp" data-wow-delay="0.1s">
+          <p>Deep learning methods for image processing are rapidly advancing and imaging techniques have become a
+            standard for classification and quantification in agriculture. However, agricultural datasets assembled by
+            domain experts are still comparably small. The global wheat consortium brings together this domain knowledge
+            to assemble a large training set. We aim is to define a balanced dataset for training and validation
+            containing the most relevant features observable for field-grown wheat. Image information will be enhanced
+            by metadata, such as the developmental stage, genotype or agricultural treatment.</p>
         </div>
-    
+
+        <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+          <p class="text-primary">Contributed images fulfil the following conditions:</p>
+          <h5 class="mb-3">
+            <i class="far fa-check-circle text-primary me-3"></i>Red-green-blue (RGB) images
+          </h5>
+          <h5 class="mb-3">
+            <i class="far fa-check-circle text-primary me-3"></i>0° and 45°, viewing angles
+          </h5>
+          <h5 class="mb-3">
+            <i class="far fa-check-circle text-primary me-3"></i>Spatial resolution <= 0.5 mm / pixel </h5>
+              <h5 class="mb-3">
+                <i class="far fa-check-circle text-primary me-3"></i>Patches of [512 x 512] pixels, up to [1024 x 1024].
+              </h5>
+              <h5 class="mb-3">
+                <i class="far fa-check-circle text-primary me-3"></i>At least 7 Classes: wheat spikes, stems, awns,
+                leaves, soil ...
+              </h5>
+        </div>
+        <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.5s">
+          <p class="text-primary">Powered by:</p>
+          <p>CVAT Annotation Platform
+            <span class="badge bg-primary rounded-pill" type=button
+              onClick="javascript:window.open('https://annotation.kp.ethz.ch', '_black');"><a>Website</a></span>
+            <span class="badge bg-primary rounded-pill" type=button
+              onclick="javascript:window.open('assets/CVAT_Guide.pdf', '_black');">User Manual</span>
+          </p>
+          <p>Dataset download link comming soon</p>
+        </div>
+      </div>
     </div>
-    <!-- About End -->
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5" id="sponsors">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="col-lg-6">
-                <p><span class="text-primary me-2">#</span>Our Sponsors</p>
-                <h1 class="display-5 mb-0">
-                Sponsors for the project.  
-                <span class="text-primary">Call for sponsors for GWFSS project!</span>
-                </h1>
-            </div>
-            <div class="col-lg-6">
-                <div class="bg-primary h-100 d-flex align-items-center py-4 px-4 px-sm-5"
-                type=button onclick="javascript:window.open('#', '_black');">
-                <i class="fa fa-3x fa-mobile-alt text-white"></i>
-                <div class="ms-4">
-                    <p class="text-white mb-0">Also want supporting us to become a sponsor?</p>
-                    <h2 class="text-white mb-0">Contact us</h2>
-                    <h6 class="text-white mb-0">andreas.hund[at]usys.ethz.ch</h6>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="row gy-5 gx-4">
+  </div>
+  <!-- About End -->
 
-            <!-- Sponsor list -->
-    
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/grdc_logo.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://grdc.com.au/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-danger">Platinum sponsor</h5>
-                <span>GRDC</span>
+  <!-- Service Start -->
+  <div class="container-xxl py-5" id="sponsors">
+    <div class="container">
+      <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-6">
+          <p><span class="text-primary me-2">#</span>Our Sponsors</p>
+          <h1 class="display-5 mb-0">
+            Sponsors for the project.
+            <span class="text-primary">Call for sponsors for GWFSS project!</span>
+          </h1>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-primary h-100 d-flex align-items-center py-4 px-4 px-sm-5" type=button
+            onclick="javascript:window.open('#', '_black');">
+            <i class="fa fa-3x fa-mobile-alt text-white"></i>
+            <div class="ms-4">
+              <p class="text-white mb-0">Also want supporting us to become a sponsor?</p>
+              <h2 class="text-white mb-0">Contact us</h2>
+              <h6 class="text-white mb-0">andreas.hund[at]usys.ethz.ch</h6>
             </div>
-    
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/arvalis_logo.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.arvalis.fr/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-warning">Gold sponsor</h5>
-                <span>Arvalis</span>
-            </div>
-    
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/phenet_logo.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.phenet.eu/en', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-info">Silver sponsor</h5>
-                <span>PHENET</span>
-            </div>
-    
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/dsp_logo.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.dsp-delley.ch/en/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-success">Bronze sponsor</h5>
-                <span>Delley Seeds and Plants Ltd</span>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/dsv_logo.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.dsv-saaten.de/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-success">Bronze sponsor</h5>
-                <span>Deutsche Saatveredelung AG</span>
-            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row gy-5 gx-4">
 
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/asur_logo.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.asur-plantbreeding.com/en/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-success">Bronze sponsor</h5>
-                <span>ASUR plant breeding</span>
-            </div>
+        <!-- Sponsor list -->
 
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/plantphenomics.svg" height="65px;" alt="Icon" onclick="javascript:window.open('https://spj.science.org/journal/plantphenomics', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-success">Bronze sponsor</h5>
-                <span>Plant Phenomics</span>
-            </div>
-    
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/grdc_logo.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://grdc.com.au/', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-danger">Platinum sponsor</h5>
+          <span>GRDC</span>
+        </div>
 
-            <!-- End of Sponsor list -->
-    
-    
-            <!-- <div
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/arvalis_logo.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://www.arvalis.fr/', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-warning">Gold sponsor</h5>
+          <span>Arvalis</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/phenet_logo.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://www.phenet.eu/en', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-info">Silver sponsor</h5>
+          <span>PHENET</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/dsp_logo.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://www.dsp-delley.ch/en/', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-success">Bronze sponsor</h5>
+          <span>Delley Seeds and Plants Ltd</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/dsv_logo.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://www.dsv-saaten.de/', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-success">Bronze sponsor</h5>
+          <span>Deutsche Saatveredelung AG</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/asur_logo.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://www.asur-plantbreeding.com/en/', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-success">Bronze sponsor</h5>
+          <span>ASUR plant breeding</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/plantphenomics.svg" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://spj.science.org/journal/plantphenomics', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-success">Bronze sponsor</h5>
+          <span>Plant Phenomics</span>
+        </div>
+
+
+        <!-- End of Sponsor list -->
+
+
+        <!-- <div
                 class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
                 data-wow-delay="0.7s"
             >
@@ -422,28 +418,24 @@
                 sed diam stet diam sed stet.</span
                 >
             </div> -->
-            </div>
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                <h1 class="display-5 mt-5">
-                    They also support us
-                </h1>
-                </div>
-                <img class="img-fluid m-2 wow fadeInUp" data-wow-delay="0.7s" src="img/icon/gwfss_Logos_wide.jpg" alt="Icon" />
-            </div> 
+      </div>
+      <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-6">
+          <h1 class="display-5 mt-5">
+            They also support us
+          </h1>
         </div>
-        </div>
-        <!-- Service End -->
-    
-        <!-- Visiting Hours Start -->
-        <div
-        class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp"
-        data-wow-delay="0.1s"
-        id="contributors"
-        >
-        <div class="container py-5">
-            <div class="row g-5">
-            <!-- <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+        <img class="img-fluid m-2 wow fadeInUp" data-wow-delay="0.7s" src="img/icon/gwfss_Logos_wide.jpg" alt="Icon" />
+      </div>
+    </div>
+  </div>
+  <!-- Service End -->
+
+  <!-- Visiting Hours Start -->
+  <div class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp" data-wow-delay="0.1s" id="contributors">
+    <div class="container py-5">
+      <div class="row g-5">
+        <!-- <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
                 <h1 class="display-6 text-white mb-5">Organisers</h1>
                 <ul class="list-group list-group-flush">
                 <li class="list-group-item">
@@ -485,281 +477,263 @@
                 </li>
                 </ul>
             </div> -->
-            <div class="text-light wow fadeIn" data-wow-delay="0.5s">
-                <h1 class="display-6 text-white mb-5">Organisers and Collaborators</h1>
-                <table class="table">
-                <thead>
-                    <tr>
-                    <td width="69">firstName</td>
-                    <td width="128">lastName</td>
-                    <td width="121">OrganzationName</td>
-                    <td width="214">roleInGW</td>
-                    </tr>
-                    <tr>
-                    <td>Benoît</td>
-                    <td>De Solan</td>
-                    <td>Arvalis</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Lucas</td>
-                    <td>Bernigaud Samatan</td>
-                    <td>Arvalis</td>
-                    <td>Lead labelling</td>
-                    </tr>
-                    <tr>
-                    <td>Francisco</td>
-                    <td>Pinto Espinosa</td>
-                    <td>CIMMYT</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Sebastien</td>
-                    <td>Dandrifosse</td>
-                    <td>CRA wallonie</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Andreas</td>
-                    <td>Hund</td>
-                    <td>ETHZ</td>
-                    <td>Project lead</td>
-                    </tr>
-                    <tr>
-                    <td>Jonas</td>
-                    <td>Anderegg</td>
-                    <td>ETHZ</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Norbert</td>
-                    <td>Kirchgessner</td>
-                    <td>ETHZ</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Radek</td>
-                    <td>Zenkl</td>
-                    <td>ETHZ</td>
-                    <td>CVAT administrator, lead tagging</td>
-                    </tr>
-                    <tr>
-                    <td>Alexis</td>
-                    <td>Comar</td>
-                    <td>HIPHEN</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Kamran</td>
-                    <td>Irfan</td>
-                    <td>HIPHEN</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Andrea</td>
-                    <td>Visioni</td>
-                    <td>ICARDA</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Raul</td>
-                    <td>Lopez-Lozano</td>
-                    <td>INRAe</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Etienne</td>
-                    <td>David</td>
-                    <td>INRAE</td>
-                    <td>alumni</td>
-                    </tr>
-                    <tr>
-                    <td>Frederic</td>
-                    <td>Baret</td>
-                    <td>INRAE</td>
-                    <td>emeritus</td>
-                    </tr>
-                    <tr>
-                    <td>Marie</td>
-                    <td>Weiss</td>
-                    <td>INRAE</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Marie-Pia</td>
-                    <td>D'argaignon</td>
-                    <td>INRAE</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Simon</td>
-                    <td>Madec</td>
-                    <td>INRAE</td>
-                    <td>alumni</td>
-                    </tr>
-                    <tr>
-                    <td>Malcolm</td>
-                    <td>Hawkesford</td>
-                    <td>Rothamsted</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Nicolas</td>
-                    <td>Virlet</td>
-                    <td>Rothamsted</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Latifa</td>
-                    <td>Greche</td>
-                    <td>Rothamsted</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Benoît</td>
-                    <td>Mercatoris</td>
-                    <td>U. Liege</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Benjamin</td>
-                    <td>Dumont</td>
-                    <td>U. Liege</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Alexis</td>
-                    <td>Carlier</td>
-                    <td>U. Liege</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Scott</td>
-                    <td>Chapman</td>
-                    <td>U. Queensland</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Zhi</td>
-                    <td>Chen</td>
-                    <td>U. Queensland</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Ian</td>
-                    <td>Stavness</td>
-                    <td>U. Saskatchewan</td>
-                    <td>Competition management</td>
-                    </tr>
-                    <tr>
-                    <td>Wei</td>
-                    <td>Guo</td>
-                    <td>U. Tokyo</td>
-                    <td>Website management</td>
-                    </tr>
-                    <tr>
-                    <td>Haozhou</td>
-                    <td>Wang</td>
-                    <td>U. Tokyo</td>
-                    <td>Website management</td>
-                    </tr>
-                    <tr>
-                    <td>Shouyang</td>
-                    <td>Liu</td>
-                    <td>NAU</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Kersin</td>
-                    <td>Neumann</td>
-                    <td>IPK</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Evgeny</td>
-                    <td>Gladilin</td>
-                    <td>IPK</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Ingo</td>
-                    <td>Mücke</td>
-                    <td>IPK</td>
-                    <td>contributor</td>
-                    </tr>
-                </table>
-                    <!-- <tr>
+        <div class="text-light wow fadeIn" data-wow-delay="0.5s">
+          <h1 class="display-6 text-white mb-5">Organisers and Collaborators</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <td width="69">firstName</td>
+                <td width="128">lastName</td>
+                <td width="121">OrganzationName</td>
+                <td width="214">roleInGW</td>
+              </tr>
+              <tr>
+                <td>Benoît</td>
+                <td>De Solan</td>
+                <td>Arvalis</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Lucas</td>
+                <td>Bernigaud Samatan</td>
+                <td>Arvalis</td>
+                <td>Lead labelling</td>
+              </tr>
+              <tr>
+                <td>Francisco</td>
+                <td>Pinto Espinosa</td>
+                <td>CIMMYT</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Sebastien</td>
+                <td>Dandrifosse</td>
+                <td>CRA wallonie</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Andreas</td>
+                <td>Hund</td>
+                <td>ETHZ</td>
+                <td>Project lead</td>
+              </tr>
+              <tr>
+                <td>Jonas</td>
+                <td>Anderegg</td>
+                <td>ETHZ</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Norbert</td>
+                <td>Kirchgessner</td>
+                <td>ETHZ</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Radek</td>
+                <td>Zenkl</td>
+                <td>ETHZ</td>
+                <td>CVAT administrator, lead tagging</td>
+              </tr>
+              <tr>
+                <td>Alexis</td>
+                <td>Comar</td>
+                <td>HIPHEN</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Kamran</td>
+                <td>Irfan</td>
+                <td>HIPHEN</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Andrea</td>
+                <td>Visioni</td>
+                <td>ICARDA</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Raul</td>
+                <td>Lopez-Lozano</td>
+                <td>INRAe</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Etienne</td>
+                <td>David</td>
+                <td>INRAE</td>
+                <td>alumni</td>
+              </tr>
+              <tr>
+                <td>Frederic</td>
+                <td>Baret</td>
+                <td>INRAE</td>
+                <td>emeritus</td>
+              </tr>
+              <tr>
+                <td>Marie</td>
+                <td>Weiss</td>
+                <td>INRAE</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Marie-Pia</td>
+                <td>D'argaignon</td>
+                <td>INRAE</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Simon</td>
+                <td>Madec</td>
+                <td>INRAE</td>
+                <td>alumni</td>
+              </tr>
+              <tr>
+                <td>Malcolm</td>
+                <td>Hawkesford</td>
+                <td>Rothamsted</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Nicolas</td>
+                <td>Virlet</td>
+                <td>Rothamsted</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Latifa</td>
+                <td>Greche</td>
+                <td>Rothamsted</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Benoît</td>
+                <td>Mercatoris</td>
+                <td>U. Liege</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Benjamin</td>
+                <td>Dumont</td>
+                <td>U. Liege</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Alexis</td>
+                <td>Carlier</td>
+                <td>U. Liege</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Scott</td>
+                <td>Chapman</td>
+                <td>U. Queensland</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Zhi</td>
+                <td>Chen</td>
+                <td>U. Queensland</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Ian</td>
+                <td>Stavness</td>
+                <td>U. Saskatchewan</td>
+                <td>Competition management</td>
+              </tr>
+              <tr>
+                <td>Wei</td>
+                <td>Guo</td>
+                <td>U. Tokyo</td>
+                <td>Website management</td>
+              </tr>
+              <tr>
+                <td>Haozhou</td>
+                <td>Wang</td>
+                <td>U. Tokyo</td>
+                <td>Website management</td>
+              </tr>
+              <tr>
+                <td>Shouyang</td>
+                <td>Liu</td>
+                <td>NAU</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Kersin</td>
+                <td>Neumann</td>
+                <td>IPK</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Evgeny</td>
+                <td>Gladilin</td>
+                <td>IPK</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Ingo</td>
+                <td>Mücke</td>
+                <td>IPK</td>
+                <td>contributor</td>
+              </tr>
+          </table>
+          <!-- <tr>
                     <td>Support</td>
                     <td>
                         <p class="mb-2">+012 345 6789</p>
                         <p class="mb-0">support@example.com</p>
                     </td>
                     </tr> -->
-                </tbody>
-                </table>
-            </div>
-            </div>
+          </tbody>
+          </table>
         </div>
+      </div>
     </div>
-    <!-- Visiting Hours End -->
+  </div>
+  <!-- Visiting Hours End -->
 
-    <!-- Video Modal Start--> 
-    <div
-      class="modal modal-video fade"
-      id="videoModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!-- 16:9 aspect ratio -->
-            <div class="ratio ratio-16x9">
-              <iframe
-                class="embed-responsive-item"
-                src=""
-                id="video"
-                allowfullscreen
-                allowscriptaccess="always"
-                allow="autoplay"
-              ></iframe>
-            </div>
+  <!-- Video Modal Start-->
+  <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- 16:9 aspect ratio -->
+          <div class="ratio ratio-16x9">
+            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+              allow="autoplay"></iframe>
           </div>
         </div>
       </div>
     </div>
-    <!-- Video Modal End -->
-        
+  </div>
+  <!-- Video Modal End -->
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Address</h5>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>Institute of Agricultural Sciences, FMG C 25,Eschikon 33,8315 Lindau,Switzerland
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+41  52 354 91 23
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>andreas.hund<@>usys.ethz.ch
-            </p>
-            <!-- <div class="d-flex pt-2">
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Address</h5>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>Institute of Agricultural Sciences, FMG C 25,Eschikon 33,8315
+            Lindau,Switzerland
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>+41 52 354 91 23
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>andreas.hund<@>usys.ethz.ch
+          </p>
+          <!-- <div class="d-flex pt-2">
               <a class="btn btn-outline-light btn-social" href=""
                 ><i class="fab fa-twitter"></i
               ></a>
@@ -773,8 +747,8 @@
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div> -->
-          </div>
-<!--           <div class="col-lg-3 col-md-6">
+        </div>
+        <!--           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Quick Links</h5>
             <a class="btn btn-link" href="">About Us</a>
             <a class="btn btn-link" href="">Contact Us</a>
@@ -782,7 +756,7 @@
             <a class="btn btn-link" href="">Terms & Condition</a>
             <a class="btn btn-link" href="">Support</a>
           </div> -->
-<!--           <div class="col-lg-3 col-md-6">
+        <!--           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Popular Links</h5>
             <a class="btn btn-link" href="">About Us</a>
             <a class="btn btn-link" href="">Contact Us</a>
@@ -790,7 +764,7 @@
             <a class="btn btn-link" href="">Terms & Condition</a>
             <a class="btn btn-link" href="">Support</a>
           </div> -->
-          <!-- <div class="col-lg-3 col-md-6">
+        <!-- <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Newsletter</h5>
             <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
             <div class="position-relative mx-auto" style="max-width: 400px">
@@ -807,48 +781,50 @@
               </button>
             </div>
           </div> -->
-        </div>
       </div>
+    </div>
 
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">www.global-wheat.com</a>, All
-              Right Reserved.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Template Designed By
-              <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-              <br />Website Maintained By:
-              <a class="border-bottom" href="https://www.haozhou.wang" target="_blank">Haozhou Wang</a>
-              and
-              <a class="border-bottom" href="https://www.u-tokyo.ac.jp/focus/en/people/k0001_01967.html" target="_blank">Wei Guo</a>
-            </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">www.global-wheat.com</a>, All
+            Right Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            Template Designed By
+            <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+            <br />Website Maintained By:
+            <a class="border-bottom" href="https://www.haozhou.wang" target="_blank">Haozhou Wang</a>
+            and
+            <a class="border-bottom" href="https://www.u-tokyo.ac.jp/focus/en/people/k0001_01967.html"
+              target="_blank">Wei Guo</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
- 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>

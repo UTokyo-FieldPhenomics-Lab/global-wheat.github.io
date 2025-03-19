@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Global WHEAT Dataset</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>Global WHEAT Dataset</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+  <!-- Topbar Start -->
+  <!-- <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
       <div class="row gx-0 d-none d-lg-flex">
         <div class="col-lg-7 px-5 text-start">
           <div class="h-100 d-inline-flex align-items-center py-3 me-4">
@@ -91,143 +79,153 @@
         </div>
       </div>
     </div> -->
-    <!-- Topbar End -->
+  <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <nav
-    class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
-    data-wow-delay="0.1s"
-    >
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+    data-wow-delay="0.1s">
     <a href="index.html" class="navbar-brand p-0">
-        <img class="img-fluid me-3" src="img/logo.png" alt="Icon" />
-        <!-- <h1 class="m-0 text-primary">Zoofari</h1> -->
+      <img class="img-fluid me-3" src="img/logo.png" alt="Icon" />
+      <!-- <h1 class="m-0 text-primary">Zoofari</h1> -->
     </a>
-    <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-    >
-        <span class="navbar-toggler-icon"></span>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
-        <div class="navbar-nav ms-auto">
+      <div class="navbar-nav ms-auto">
         <a href="index.html" class="nav-item nav-link active">Home</a>
         <a href="#about" class="nav-item nav-link">About</a>
         <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
-            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                <a href="./gwhd.html" class="dropdown-item">GWHD (detection)</a>
-                <a href="./gwfss.html" class="dropdown-item">GWFSS (segmentation)</a>
-            </div>
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+          <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+            <a href="./gwhd.html" class="dropdown-item">GWHD (detection)</a>
+            <a href="./gwfss.html" class="dropdown-item">GWFSS (segmentation)</a>
+          </div>
         </div>
         <a href="./index.html#events" class="nav-item nav-link">Events</a>
-        </div>
-        <!-- <a href="https://zenodo.org/record/5092309" target="_blank" class="btn btn-primary"
+      </div>
+      <!-- <a href="https://zenodo.org/record/5092309" target="_blank" class="btn btn-primary"
         >Download<i class="fa fa-arrow-right ms-3"></i
         ></a> -->
     </div>
-    </nav>
-    <!-- Navbar End -->
+  </nav>
+  <!-- Navbar End -->
 
-    <!-- Page Header Start -->
-    <div
-    class="container-fluid header-bg py-5 mb-5 wow fadeIn"
-    data-wow-delay="0.1s"
-    >
+  <!-- Page Header Start -->
+  <div class="container-fluid header-bg py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
-        <h1 class="display-4 text-white mb-3 animated slideInDown">
+      <h1 class="display-4 text-white mb-3 animated slideInDown">
         Available Dataset
-        </h1>
-        <nav aria-label="breadcrumb animated slideInDown">
+      </h1>
+      <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item">
+          <li class="breadcrumb-item">
             <a class="text-white" href="./index.html">Home</a>
-            </li>
-            <li class="breadcrumb-item">
+          </li>
+          <li class="breadcrumb-item">
             <a class="text-white" href="#">Projects</a>
-            </li>
-            <li class="breadcrumb-item text-primary active" aria-current="page">
+          </li>
+          <li class="breadcrumb-item text-primary active" aria-current="page">
             GWDH (detection)
-            </li>
+          </li>
         </ol>
-        </nav>
+      </nav>
     </div>
-    </div>
-    <!-- Page Header End -->
+  </div>
+  <!-- Page Header End -->
 
-    <div class="container-xxl">
-        <div class="container" id="gwhd">
-            <div class="row g-5">
-                <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <p><span class="text-primary me-2">#</span>Past projects (<span class="text-primary">GWHD</span>)</p>
-                    <h1 class="display-5">  
-                        Global Wheat Head Detection Dataset
-                    </h1>
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-4">
-                        Global wheat head detection Dataset is the first large-scale dataset for wheat head detection from field optical images. It included a very large range of cultivars from differents continents. Wheat is a staple crop grown all over the world and consequently interest in wheat phenotyping spans the globe. Therefore, it is important that models developed for wheat phenotyping, such as wheat head detection networks, generalize between different growing environments around the world.
-                    </p>
-                    <h5 class="mb-3 text-capitalize">
-                    <i class="far fa-check-circle text-primary me-3"></i>Free to use for any purpose
-                    </h5>
-                    <h5 class="mb-3 text-capitalize">
-                    <i class="far fa-check-circle text-primary me-3"></i>Large range of cultivars and environmental condition
-                    </h5>
-                    <h5 class="mb-3 text-capitalize">
-                    <i class="far fa-check-circle text-primary me-3"></i>Images taken by different platforms
-                    </h5>
-                    <!-- <a class="btn btn-primary py-3 px-5 " href="https://zenodo.org/record/4298502" target="_blank">Download</a> -->
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="img-border">
-                    <img class="img-fluid" src="img/descriptionimage.png" alt="" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-5 mt-5">
-                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="display-5">GWHD <span class="text-primary">2020</span></h1>
-                <p class="mb-4">
-                    Through a joint international collaborative effort, we have built a large, diverse, and well-labelled dataset of wheat images, called the Global Wheat Head Detection (GWHD) dataset. It contains 4700 high-resolution RGB images and 190000 labelled wheat heads collected from several countries around the world at different growth stages with a wide range of genotypes. Guidelines for image acquisition, associating minimum metadata to respect FAIR principles, and consistent head labelling methods are proposed when developing new head detection datasets.This is the official version of the Global Wheat Head Dataset presented in David et al. (2020) . It's a corrected version of the dataset published on Kaggle, and the one used for the Codalab challenge.
-                </p>
-                <p>
-                    <span class="badge bg-info rounded-pill">version 4</span> 
-                    <span class="badge bg-primary rounded-pill" type=button onClick="javascript:window.open('https://doi.org/10.34133/2020/3521852', '_black');"><a>DOI</a></span> 
-                    <span class="badge bg-primary rounded-pill" type=button onclick="javascript:window.open('https://zenodo.org/record/4298502', '_black');">Download</span>
-                </p>
-                </div>
-    
-                <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="display-5">GWHD <span class="text-primary">2021</span></h1>
-                <p class="mb-4">From this first experience, a few avenues for improvements have been identified regarding data size, head diversity, and label reliability. To address these issues, the 2020 dataset has been reexamined, relabeled, and complemented by adding 1722 images from 5 additional countries, allowing for 81,553 additional wheat heads. This is the official version of the Global Wheat Head Dataset presented in David et al. (2021).Labels are included in csv. The dataset is composed of more than 6000 images of 1024x1024 pixels containing 300k+ unique wheat heads, with the corresponding bounding boxes.</p>
-                <p>
-                    <span class="badge bg-info rounded-pill">version 1.0</span> 
-                    <span class="badge bg-primary rounded-pill" type=button onClick="javascript:window.open('https://doi.org/10.34133/2021/9846158', '_black');"><a>DOI</a></span> 
-                    <span class="badge bg-primary rounded-pill" type=button onclick="javascript:window.open('https://zenodo.org/record/5092309', '_black');">Download</span>
-                </p>
-                </div>
-            </div>
+  <div class="container-xxl">
+    <div class="container" id="gwhd">
+      <div class="row g-5">
+        <div class="wow fadeInUp" data-wow-delay="0.1s">
+          <p><span class="text-primary me-2">#</span>Past projects (<span class="text-primary">GWHD</span>)</p>
+          <h1 class="display-5">
+            Global Wheat Head Detection Dataset
+          </h1>
         </div>
-    
-    </div>
-    <!-- About End -->
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5" id="sponsors">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="col-lg-6">
-                <p><span class="text-primary me-2">#</span>Our Sponsors</p>
-                <h1 class="display-5 mb-0">
-                Sponsors for GWHD project.  
-                </h1>
-            </div>
-            <!-- <div class="col-lg-6">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <p class="mb-4">
+            Global wheat head detection Dataset is the first large-scale dataset for wheat head detection from field
+            optical images. It included a very large range of cultivars from differents continents. Wheat is a staple
+            crop grown all over the world and consequently interest in wheat phenotyping spans the globe. Therefore, it
+            is important that models developed for wheat phenotyping, such as wheat head detection networks, generalize
+            between different growing environments around the world.
+          </p>
+          <h5 class="mb-3 text-capitalize">
+            <i class="far fa-check-circle text-primary me-3"></i>Free to use for any purpose
+          </h5>
+          <h5 class="mb-3 text-capitalize">
+            <i class="far fa-check-circle text-primary me-3"></i>Large range of cultivars and environmental condition
+          </h5>
+          <h5 class="mb-3 text-capitalize">
+            <i class="far fa-check-circle text-primary me-3"></i>Images taken by different platforms
+          </h5>
+          <!-- <a class="btn btn-primary py-3 px-5 " href="https://zenodo.org/record/4298502" target="_blank">Download</a> -->
+        </div>
+
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="img-border">
+            <img class="img-fluid" src="img/descriptionimage.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5 mt-5">
+        <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+          <h1 class="display-5">GWHD <span class="text-primary">2020</span></h1>
+          <p class="mb-4">
+            Through a joint international collaborative effort, we have built a large, diverse, and well-labelled
+            dataset of wheat images, called the Global Wheat Head Detection (GWHD) dataset. It contains 4700
+            high-resolution RGB images and 190000 labelled wheat heads collected from several countries around the world
+            at different growth stages with a wide range of genotypes. Guidelines for image acquisition, associating
+            minimum metadata to respect FAIR principles, and consistent head labelling methods are proposed when
+            developing new head detection datasets.This is the official version of the Global Wheat Head Dataset
+            presented in David et al. (2020) . It's a corrected version of the dataset published on Kaggle, and the one
+            used for the Codalab challenge.
+          </p>
+          <p>
+            <span class="badge bg-info rounded-pill">version 4</span>
+            <span class="badge bg-primary rounded-pill" type=button
+              onClick="javascript:window.open('https://doi.org/10.34133/2020/3521852', '_black');"><a>DOI</a></span>
+            <span class="badge bg-primary rounded-pill" type=button
+              onclick="javascript:window.open('https://zenodo.org/record/4298502', '_black');">Download</span>
+          </p>
+        </div>
+
+        <div class="col-lg-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+          <h1 class="display-5">GWHD <span class="text-primary">2021</span></h1>
+          <p class="mb-4">From this first experience, a few avenues for improvements have been identified regarding data
+            size, head diversity, and label reliability. To address these issues, the 2020 dataset has been reexamined,
+            relabeled, and complemented by adding 1722 images from 5 additional countries, allowing for 81,553
+            additional wheat heads. This is the official version of the Global Wheat Head Dataset presented in David et
+            al. (2021).Labels are included in csv. The dataset is composed of more than 6000 images of 1024x1024 pixels
+            containing 300k+ unique wheat heads, with the corresponding bounding boxes.</p>
+          <p>
+            <span class="badge bg-info rounded-pill">version 1.0</span>
+            <span class="badge bg-primary rounded-pill" type=button
+              onClick="javascript:window.open('https://doi.org/10.34133/2021/9846158', '_black');"><a>DOI</a></span>
+            <span class="badge bg-primary rounded-pill" type=button
+              onclick="javascript:window.open('https://zenodo.org/record/5092309', '_black');">Download</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- About End -->
+
+  <!-- Service Start -->
+  <div class="container-xxl py-5" id="sponsors">
+    <div class="container">
+      <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-6">
+          <p><span class="text-primary me-2">#</span>Our Sponsors</p>
+          <h1 class="display-5 mb-0">
+            Sponsors for GWHD project.
+          </h1>
+        </div>
+        <!-- <div class="col-lg-6">
                 <div class="bg-primary h-100 d-flex align-items-center py-4 px-4 px-sm-5"
                 type=button onclick="javascript:window.open('#', '_black');">
                 <i class="fa fa-3x fa-mobile-alt text-white"></i>
@@ -237,55 +235,67 @@
                 </div>
                 </div>
             </div> -->
-            </div>
-            <div class="row gy-5 gx-4">
-    
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <!-- <div class="h-25 p-2 mh-100" style="background: url('img/icon/gifs.jpg') center center no-repeat; background-size: cover;"></div> -->
-                <img class="mb-3 mw-100" src="img/icon/gifs.jpg" height="65px;" alt="Icon" onclick="javascript:window.open('https://gifs.ca/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-danger">Platinum sponsor</h5>
-                <span>Global Institude For Food Security</span>
-            </div>
+      </div>
+      <div class="row gy-5 gx-4">
 
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <!-- <div class="h-25 p-2 mh-100" style="background: url('img/icon/gifs.jpg') center center no-repeat; background-size: cover;"></div> -->
-                <img class="mb-3 mw-100" src="img/icon/grdc_logo.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://gifs.ca/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-danger">Platinum sponsor</h5>
-                <span>Grains Research & Development Corporation</span>
-            </div>
-    
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/Kubota.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.kubota.co.jp/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-warning">Gold sponsor</h5>
-                <span>Kubota</span>
-            </div>
-    
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/DigitAg.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.hdigitag.fr/fr/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-warning">Gold sponsor</h5>
-                <span>Digit Agriculture</span>
-            </div>
-    
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/Hiphen.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://www.hiphen-plant.com/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-warning">Gold sponsor</h5>
-                <span>Hiphen</span>
-            </div>
-    
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/plantphenomics.svg" height="65px;" alt="Icon" onclick="javascript:window.open('https://spj.science.org/journal/plantphenomics', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-secondary">Silver sponsor</h5>
-                <span>Plant Phenomics</span>
-            </div>
-    
-            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                <img class="mb-3 mw-100" src="img/icon/quantomics.png" height="65px;" alt="Icon" onclick="javascript:window.open('https://quantomics.co.jp/', '_black');" onmouseover="" style="cursor: pointer;"/>
-                <h5 class="mb-3 text-secondary">Silver sponsor</h5>
-                <span>Quantomics</span>
-            </div>
-    
-    
-            <!-- <div
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <!-- <div class="h-25 p-2 mh-100" style="background: url('img/icon/gifs.jpg') center center no-repeat; background-size: cover;"></div> -->
+          <img class="mb-3 mw-100" src="img/icon/gifs.jpg" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://gifs.ca/', '_black');" onmouseover="" style="cursor: pointer;" />
+          <h5 class="mb-3 text-danger">Platinum sponsor</h5>
+          <span>Global Institude For Food Security</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <!-- <div class="h-25 p-2 mh-100" style="background: url('img/icon/gifs.jpg') center center no-repeat; background-size: cover;"></div> -->
+          <img class="mb-3 mw-100" src="img/icon/grdc_logo.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://gifs.ca/', '_black');" onmouseover="" style="cursor: pointer;" />
+          <h5 class="mb-3 text-danger">Platinum sponsor</h5>
+          <span>Grains Research & Development Corporation</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/Kubota.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://www.kubota.co.jp/', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-warning">Gold sponsor</h5>
+          <span>Kubota</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/DigitAg.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://www.hdigitag.fr/fr/', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-warning">Gold sponsor</h5>
+          <span>Digit Agriculture</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/Hiphen.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://www.hiphen-plant.com/', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-warning">Gold sponsor</h5>
+          <span>Hiphen</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/plantphenomics.svg" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://spj.science.org/journal/plantphenomics', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-secondary">Silver sponsor</h5>
+          <span>Plant Phenomics</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+          <img class="mb-3 mw-100" src="img/icon/quantomics.png" height="65px;" alt="Icon"
+            onclick="javascript:window.open('https://quantomics.co.jp/', '_black');" onmouseover=""
+            style="cursor: pointer;" />
+          <h5 class="mb-3 text-secondary">Silver sponsor</h5>
+          <span>Quantomics</span>
+        </div>
+
+
+        <!-- <div
                 class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
                 data-wow-delay="0.7s"
             >
@@ -296,28 +306,24 @@
                 sed diam stet diam sed stet.</span
                 >
             </div> -->
-            </div>
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                <h1 class="display-5 mt-5">
-                    They also support us
-                </h1>
-                </div>
-                <img class="img-fluid m-2 wow fadeInUp" data-wow-delay="0.7s" src="img/sponsors.png" alt="Icon" />
-            </div>
+      </div>
+      <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-6">
+          <h1 class="display-5 mt-5">
+            They also support us
+          </h1>
         </div>
-        </div>
-        <!-- Service End -->
-    
-        <!-- Visiting Hours Start -->
-        <div
-        class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp"
-        data-wow-delay="0.1s"
-        id="contributors"
-        >
-        <div class="container py-5">
-            <div class="row g-5">
-            <!-- <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+        <img class="img-fluid m-2 wow fadeInUp" data-wow-delay="0.7s" src="img/sponsors.png" alt="Icon" />
+      </div>
+    </div>
+  </div>
+  <!-- Service End -->
+
+  <!-- Visiting Hours Start -->
+  <div class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp" data-wow-delay="0.1s" id="contributors">
+    <div class="container py-5">
+      <div class="row g-5">
+        <!-- <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
                 <h1 class="display-6 text-white mb-5">Organisers</h1>
                 <ul class="list-group list-group-flush">
                 <li class="list-group-item">
@@ -359,208 +365,206 @@
                 </li>
                 </ul>
             </div> -->
-            <div class="text-light wow fadeIn" data-wow-delay="0.5s">
-                <h1 class="display-6 text-white mb-5">Organisers and Collaborators</h1>
-                <table class="table">
-                <thead>
-                    <tr>
-                    <td width="69">firstName</td>
-                    <td width="128">lastName</td>
-                    <td width="121">OrganzationName</td>
-                    <td width="214">roleInGW</td>
-                    </tr>
-                    <tr>
-                    <td>Benoît</td>
-                    <td>De Solan</td>
-                    <td>Arvalis</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Lucas</td>
-                    <td>Bernigaud Samatan</td>
-                    <td>Arvalis</td>
-                    <td>Lead labelling</td>
-                    </tr>
-                    <tr>
-                    <td>Francisco</td>
-                    <td>Pinto Espinosa</td>
-                    <td>CIMMYT</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Sebastien</td>
-                    <td>Dandrifosse</td>
-                    <td>CRA wallonie</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Andreas</td>
-                    <td>Hund</td>
-                    <td>ETHZ</td>
-                    <td>Project lead</td>
-                    </tr>
-                    <tr>
-                    <td>Jonas</td>
-                    <td>Anderegg</td>
-                    <td>ETHZ</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Norbert</td>
-                    <td>Kirchgessner</td>
-                    <td>ETHZ</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Radek</td>
-                    <td>Zenkl</td>
-                    <td>ETHZ</td>
-                    <td>CVAT administrator, lead tagging</td>
-                    </tr>
-                    <tr>
-                    <td>Alexis</td>
-                    <td>Comar</td>
-                    <td>HIPHEN</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Marc</td>
-                    <td>Labadie</td>
-                    <td>HIPHEN</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Andrea</td>
-                    <td>Visioni</td>
-                    <td>ICARDA</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Raul</td>
-                    <td>Lopez-Lozano</td>
-                    <td>INRAe</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Etienne</td>
-                    <td>David</td>
-                    <td>INRAE</td>
-                    <td>alumni</td>
-                    </tr>
-                    <tr>
-                    <td>Frederic</td>
-                    <td>Baret</td>
-                    <td>INRAE</td>
-                    <td>emeritus</td>
-                    </tr>
-                    <tr>
-                    <td>Marie</td>
-                    <td>Weiss</td>
-                    <td>INRAE</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Simon</td>
-                    <td>Madec</td>
-                    <td>INRAE</td>
-                    <td>alumni</td>
-                    </tr>
-                    <tr>
-                    <td>Malcolm</td>
-                    <td>Hawkesford</td>
-                    <td>Rothamsted</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Nicolas</td>
-                    <td>Virlet</td>
-                    <td>Rothamsted</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Latifa</td>
-                    <td>Greche</td>
-                    <td>Rothamsted</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Benoît</td>
-                    <td>Mercatoris</td>
-                    <td>U. Liege</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Benjamin</td>
-                    <td>Dumont</td>
-                    <td>U. Liege</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Alexis</td>
-                    <td>Carlier</td>
-                    <td>U. Liege</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Scott</td>
-                    <td>Chapman</td>
-                    <td>U. Queensland</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Zhi</td>
-                    <td>Chen</td>
-                    <td>U. Queensland</td>
-                    <td>contributor</td>
-                    </tr>
-                    <tr>
-                    <td>Ian</td>
-                    <td>Stavness</td>
-                    <td>U. Saskatchewan</td>
-                    <td>Competition management</td>
-                    </tr>
-                    <tr>
-                    <td>Wei</td>
-                    <td>Guo</td>
-                    <td>U. Tokyo</td>
-                    <td>Website management</td>
-                    </tr>
-                </table>
-                    <!-- <tr>
+        <div class="text-light wow fadeIn" data-wow-delay="0.5s">
+          <h1 class="display-6 text-white mb-5">Organisers and Collaborators</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <td width="69">firstName</td>
+                <td width="128">lastName</td>
+                <td width="121">OrganzationName</td>
+                <td width="214">roleInGW</td>
+              </tr>
+              <tr>
+                <td>Benoît</td>
+                <td>De Solan</td>
+                <td>Arvalis</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Lucas</td>
+                <td>Bernigaud Samatan</td>
+                <td>Arvalis</td>
+                <td>Lead labelling</td>
+              </tr>
+              <tr>
+                <td>Francisco</td>
+                <td>Pinto Espinosa</td>
+                <td>CIMMYT</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Sebastien</td>
+                <td>Dandrifosse</td>
+                <td>CRA wallonie</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Andreas</td>
+                <td>Hund</td>
+                <td>ETHZ</td>
+                <td>Project lead</td>
+              </tr>
+              <tr>
+                <td>Jonas</td>
+                <td>Anderegg</td>
+                <td>ETHZ</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Norbert</td>
+                <td>Kirchgessner</td>
+                <td>ETHZ</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Radek</td>
+                <td>Zenkl</td>
+                <td>ETHZ</td>
+                <td>CVAT administrator, lead tagging</td>
+              </tr>
+              <tr>
+                <td>Alexis</td>
+                <td>Comar</td>
+                <td>HIPHEN</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Marc</td>
+                <td>Labadie</td>
+                <td>HIPHEN</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Andrea</td>
+                <td>Visioni</td>
+                <td>ICARDA</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Raul</td>
+                <td>Lopez-Lozano</td>
+                <td>INRAe</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Etienne</td>
+                <td>David</td>
+                <td>INRAE</td>
+                <td>alumni</td>
+              </tr>
+              <tr>
+                <td>Frederic</td>
+                <td>Baret</td>
+                <td>INRAE</td>
+                <td>emeritus</td>
+              </tr>
+              <tr>
+                <td>Marie</td>
+                <td>Weiss</td>
+                <td>INRAE</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Simon</td>
+                <td>Madec</td>
+                <td>INRAE</td>
+                <td>alumni</td>
+              </tr>
+              <tr>
+                <td>Malcolm</td>
+                <td>Hawkesford</td>
+                <td>Rothamsted</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Nicolas</td>
+                <td>Virlet</td>
+                <td>Rothamsted</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Latifa</td>
+                <td>Greche</td>
+                <td>Rothamsted</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Benoît</td>
+                <td>Mercatoris</td>
+                <td>U. Liege</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Benjamin</td>
+                <td>Dumont</td>
+                <td>U. Liege</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Alexis</td>
+                <td>Carlier</td>
+                <td>U. Liege</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Scott</td>
+                <td>Chapman</td>
+                <td>U. Queensland</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Zhi</td>
+                <td>Chen</td>
+                <td>U. Queensland</td>
+                <td>contributor</td>
+              </tr>
+              <tr>
+                <td>Ian</td>
+                <td>Stavness</td>
+                <td>U. Saskatchewan</td>
+                <td>Competition management</td>
+              </tr>
+              <tr>
+                <td>Wei</td>
+                <td>Guo</td>
+                <td>U. Tokyo</td>
+                <td>Website management</td>
+              </tr>
+          </table>
+          <!-- <tr>
                     <td>Support</td>
                     <td>
                         <p class="mb-2">+012 345 6789</p>
                         <p class="mb-0">support@example.com</p>
                     </td>
                     </tr> -->
-                </tbody>
-                </table>
-            </div>
-            </div>
+          </tbody>
+          </table>
         </div>
+      </div>
     </div>
-    <!-- Visiting Hours End -->
+  </div>
+  <!-- Visiting Hours End -->
 
-    
-    <!-- Footer Start -->
-    <div
-      class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Address</h5>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>Institute of Agricultural Sciences, FMG C 25,Eschikon 33,8315 Lindau,Switzerland
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+41  52 354 91 23
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>andreas.hund<@>usys.ethz.ch
-            </p>
-            <!-- <div class="d-flex pt-2">
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Address</h5>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>Institute of Agricultural Sciences, FMG C 25,Eschikon 33,8315
+            Lindau,Switzerland
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>+41 52 354 91 23
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>andreas.hund<@>usys.ethz.ch
+          </p>
+          <!-- <div class="d-flex pt-2">
               <a class="btn btn-outline-light btn-social" href=""
                 ><i class="fab fa-twitter"></i
               ></a>
@@ -574,8 +578,8 @@
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div> -->
-          </div>
-<!--           <div class="col-lg-3 col-md-6">
+        </div>
+        <!--           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Quick Links</h5>
             <a class="btn btn-link" href="">About Us</a>
             <a class="btn btn-link" href="">Contact Us</a>
@@ -583,7 +587,7 @@
             <a class="btn btn-link" href="">Terms & Condition</a>
             <a class="btn btn-link" href="">Support</a>
           </div> -->
-<!--           <div class="col-lg-3 col-md-6">
+        <!--           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Popular Links</h5>
             <a class="btn btn-link" href="">About Us</a>
             <a class="btn btn-link" href="">Contact Us</a>
@@ -591,7 +595,7 @@
             <a class="btn btn-link" href="">Terms & Condition</a>
             <a class="btn btn-link" href="">Support</a>
           </div> -->
-          <!-- <div class="col-lg-3 col-md-6">
+        <!-- <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Newsletter</h5>
             <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
             <div class="position-relative mx-auto" style="max-width: 400px">
@@ -608,48 +612,50 @@
               </button>
             </div>
           </div> -->
-        </div>
       </div>
-      
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">www.global-wheat.com</a>, All
-              Right Reserved.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Template Designed By
-              <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-              <br />Website Maintained By:
-              <a class="border-bottom" href="https://www.haozhou.wang" target="_blank">Haozhou Wang</a>
-              and
-              <a class="border-bottom" href="https://www.u-tokyo.ac.jp/focus/en/people/k0001_01967.html" target="_blank">Wei Guo</a>
-            </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">www.global-wheat.com</a>, All
+            Right Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            Template Designed By
+            <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+            <br />Website Maintained By:
+            <a class="border-bottom" href="https://www.haozhou.wang" target="_blank">Haozhou Wang</a>
+            and
+            <a class="border-bottom" href="https://www.u-tokyo.ac.jp/focus/en/people/k0001_01967.html"
+              target="_blank">Wei Guo</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
