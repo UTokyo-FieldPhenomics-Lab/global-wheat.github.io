@@ -177,24 +177,30 @@
       <div class="row g-5">
 
         <div class="wow fadeInUp" data-wow-delay="0.1s">
-          <p><span class="text-primary me-2">#</span>Welcome To <span class="text-primary">Global wheat</span> website!
+          <p><span class="text-primary me-2">#</span>Global wheat dataset
           </p>
           <h1 class="display-5 mb-4">
-            What is
-            <span class="text-primary">Global Wheat</span> Dataset?
+            General information targeted for the website
           </h1>
           <p class="mb-4">
-            Global wheat Dataset consortium aims to improve precision phenotyping under field conditions by assembling
-            large, diverse and well annotated image data.
+            Global Wheat Dataset consortium forms ad-hoc initiatives to collect training data to solve computer vision problems.
           </p>
+          <p class="mb-4">
+            Our aim is to improve precision phenotyping of wheat by assembling large, diverse and well annotated image data and make them publicly available. 
+            We also organize data challenges to gain the attention of the machine-learning community to plant-related computer vision problems. 
+          </p>
+          <p><b>The images include: </b></p>
           <h5 class="mb-3 text-capitalize">
             <i class="far fa-check-circle text-primary me-3"></i>Different organ class labels
           </h5>
           <h5 class="mb-3 text-capitalize">
-            <i class="far fa-check-circle text-primary me-3"></i>Large range of cultivars and environmental condition
+            <i class="far fa-check-circle text-primary me-3"></i>Large range of cultivars and environmental conditions
           </h5>
           <h5 class="mb-3 text-capitalize">
             <i class="far fa-check-circle text-primary me-3"></i>Different developmental stages
+          </h5>
+          <h5 class="mb-3 text-capitalize">
+            <i class="far fa-check-circle text-primary me-3"></i>Different stress symptoms
           </h5>
 
           <!-- <h1 class="display-5 mb-4 mt-5">
@@ -207,11 +213,85 @@
               <i class="far fa-check-circle text-primary me-3"></i> Global wheat full semantic segmentation (<span class="text-primary">GWFSS</span>)
             </h5> -->
 
+          <h3 class="text-primary mt-4">The datasets are free to use for any purpose</h3>
+
         </div>
       </div>
     </div>
   </div>
   <!-- About End -->
+
+  <!-- Testimonial Start -->
+  <div class="container-xxl py-5">
+      <div class="container">
+        <h1
+          class="display-5 text-center mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          Our publications
+        </h1>
+        <h3 
+          class="text-center mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          The datasets are published in peer reviewed dataset publications
+        </h3>
+        <div
+          class="owl-carousel testimonial-carousel wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="testimonial-item text-center">
+            <img
+              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+              src="img/pub_gwhd_2020.png"
+              style="width: 100px; height: 100px"
+            />
+            <div class="testimonial-text rounded text-center p-4">
+              <p>
+                Global Wheat Head Detection (GWHD; 2020)
+              </p>
+              <h5 class="mb-1">Plant Phenomics</h5>
+              <p class="fst-italic">David et al. 2020</p>
+              <a href="https://doi.org/10.34133/2020/3521852" target="_blank" class="btn btn-sm btn-outline-dark" data-bs-toggle="tooltip">DOI: 10.34133/2020/3521852</a>
+            </div>
+          </div>
+
+          <div class="testimonial-item text-center">
+            <img
+              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+              src="img/pub_gwhd_2021.png"
+              style="width: 100px; height: 100px"
+            />
+            <div class="testimonial-text rounded text-center p-4">
+              <p>
+                Global wheat head Detection (GWHD; 2021)
+              </p>
+              <h5 class="mb-1">Plant Phenomics</h5>
+              <p class="fst-italic">David et al. 2021</p>
+              <a href="https://doi.org/10.34133/2021/9846158" target="_blank" class="btn btn-sm btn-outline-dark" data-bs-toggle="tooltip">DOI: 10.34133/2021/9846158</a>
+            </div>
+          </div>
+
+          <div class="testimonial-item text-center">
+            <img
+              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+              src="img/pub_gwfss_2025.png"
+              style="width: 100px; height: 100px"
+            />
+            <div class="testimonial-text rounded text-center p-4">
+              <p>
+                Global Wheat Full Semantic Segmentation (GWFSS_v1.0; 2025)
+              </p>
+              <h5 class="mb-1">Plant Phenomics</h5>
+              <p class="fst-italic">Wang et al. 2025</p>
+              <a href="https://doi.org/10.1016/j.plaphe.2025.100084" target="_blank" class="btn btn-sm btn-outline-dark" data-bs-toggle="tooltip">DOI: 10.1016/j.plaphe.2025.100084</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <!-- Testimonial End -->
 
   <!-- Animal Start -->
   <div class="container-xxl py-5" id="sites">
@@ -223,13 +303,16 @@
             Available <span class="text-primary">Datasets</span>
           </h1>
         </div>
-        <!-- <div class="col-lg-6 text-lg-end">
-                <a class="btn btn-primary py-3 px-5" href=""
-                >Explore More Animals</a
-                >
-            </div> -->
+        <div class="col-lg-6 text-lg-end">
+          <a class="btn btn-primary py-3 px-5" href="https://huggingface.co/GlobalWheat">Download from HuggingFace</a>
+        </div>
       </div>
-      <div class="row g-4" data-masonry='{"percentPosition": true }'>
+
+      <div class="row g-4">
+        <img class="img-fluid h-100" src="img/GWProjects_preview.png" alt="" />
+      </div>
+
+      <!-- <div class="row g-4" data-masonry='{"percentPosition": true }'>
         <div class="col-lg-6 col-md-6" data-wow-delay="0.1s">
           <a class="animal-item" href="./gwhd.html">
             <div class="position-relative" style="
@@ -238,7 +321,7 @@
                         background-size: cover;
                         background-position: center center;
                         background-image: url('img/descriptionimage.png');">
-              <!-- <img class="img-fluid h-100" src="img/descriptionimage.png" alt="" /> -->
+              <img class="img-fluid h-100" src="img/descriptionimage.png" alt="" />
               <div class="animal-text p-4">
                 <p class="text-white small text-uppercase mb-0">Dataset</p>
                 <h3 class="text-white mb-0">Global Wheat Head Detection</h3>
@@ -255,7 +338,7 @@
                     background-size: cover;
                     background-position: center center;
                     background-image: url('img/GWFSS_imagePanel.png');">
-              <!-- <img class="img-fluid h-100" src="img/GWFSS_imagePanel.png" alt="" /> -->
+              <img class="img-fluid h-100" src="img/GWFSS_imagePanel.png" alt="" />
               <div class="animal-text p-4">
                 <p class="text-white small text-uppercase mb-0">Dataset</p>
                 <h3 class="text-white mb-0">Global wheat full semantic segmentation</h3>
@@ -263,8 +346,8 @@
             </div>
           </a>
         </div>
-
-      </div>
+      </div> -->
+      
     </div>
   </div>
   <!-- Animal End -->
@@ -312,75 +395,6 @@
       </div>
     </div> -->
   <!-- Facts End -->
-
-  <!-- Testimonial Start -->
-  <!-- <div class="container-xxl py-5">
-      <div class="container">
-        <h1
-          class="display-5 text-center mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          Our Clients Say!
-        </h1>
-        <div
-          class="owl-carousel testimonial-carousel wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-1.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
-            </div>
-          </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-2.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
-            </div>
-          </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-3.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  <!-- Testimonial End -->
 
   <!-- Membership Start -->
   <div class="container-xxl py-5" id="events">
