@@ -308,9 +308,50 @@
         </div>
       </div>
 
-      <div class="row g-4">
-        <img class="img-fluid h-100" src="img/GWProjects_preview.png" alt="" />
+      <div class="row g-4" >
+        <img id="clickable-image" class="img-fluid h-100" style="cursor: pointer;" data-wow-delay="0.1s" src="img/GWProjects_preview.png" alt="the upgrades of released dataset series" />
+
+        <p class="text-center text-muted">Click to see more details of each dataset</p>
+
+        <script>
+          // click different image position to different links
+          document.addEventListener('DOMContentLoaded', function() {
+            const image = document.getElementById('clickable-image');
+
+            if (image) {
+              image.addEventListener('click', function(event) {
+                // 获取图片的当前实际宽度
+                const imageWidth = image.offsetWidth;
+                
+                // 获取点击位置相对于图片左上角的 X 坐标
+                const clickX = event.offsetX;
+                
+                // 计算图片宽度的三分之一
+                const oneThirdWidth = imageWidth / 3;
+
+                // 定义三个区域对应的链接
+                const urlLeft = './gwhd.html';
+                const urlMiddle = './gwfss.html';
+                const urlRight = './gwhs.html';
+
+                // 判断点击位置并执行跳转
+                if (clickX < oneThirdWidth) {
+                  console.log('点击了左侧区域，将跳转到:', urlLeft);
+                  window.location.href = urlLeft;
+                } else if (clickX < oneThirdWidth * 2) {
+                  console.log('点击了中间区域，将跳转到:', urlMiddle);
+                  window.location.href = urlMiddle;
+                } else {
+                  console.log('点击了右侧区域，将跳转到:', urlRight);
+                  window.location.href = urlRight;
+                }
+              });
+            }
+          });
+        </script>
       </div>
+
+
 
       <!-- <div class="row g-4" data-masonry='{"percentPosition": true }'>
         <div class="col-lg-6 col-md-6" data-wow-delay="0.1s">
@@ -347,7 +388,7 @@
           </a>
         </div>
       </div> -->
-      
+
     </div>
   </div>
   <!-- Animal End -->
